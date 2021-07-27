@@ -1,0 +1,40 @@
+:root {
+  --navy: #022737;
+  --white: #eaeaea;
+  --white-two: #f5f5f5;
+  --deep-torquoise: #006778;
+  --light-grey-blue: #b6bdbd;
+  --helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
+    Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--helvetica);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #505050;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.MuiTab-textColorInherit.Mui-selected {
+  z-index: 999;
+  opacity: 1;
+  color: var(--deep-torquoise);
+  border: none;
+  border-top: 4px solid var(--deep-torquoise);
+  background-color: #fff;
+}
+.PrivateTabIndicator-colorSecondary-28 {
+  background-color:var(--white) !important;
+}
