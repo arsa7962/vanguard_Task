@@ -7,11 +7,19 @@ export const ButtonWrapper = styled.div`
   padding: 20px 0px 70px 0px;
 `;
 export const useStyles = makeStyles((theme) => ({
+  bold: {
+    fontWeight: 'bold',
+  },
   wrapper: {
-    marginTop: '220px',
+    marginTop: '217px',
+    [theme.breakpoints.down('sm')]: {
+      marginTop: '237px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      marginTop: '260px',
+    },
   },
   btn: {
-    marginTop: '20px',
-    marginBottom: '50px',
+    marginBottom: '38px',
   },
 }));

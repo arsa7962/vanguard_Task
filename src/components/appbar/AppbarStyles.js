@@ -9,9 +9,9 @@ export const useStyles = makeStyles((theme) => ({
     padding: '0px',
     float: 'right',
     minHeight: '40px',
-    color: '#fff',
+    color: 'var(--white)',
     [theme.breakpoints.down('sm')]: {
-      marginRight:'-15px',
+      marginRight: '-15px',
     },
   },
   button: {
@@ -21,39 +21,38 @@ export const useStyles = makeStyles((theme) => ({
       backgroundColor: 'var(--deep-torquoise)',
     },
   },
-  select:{
-    maxWidth:'250px',
-    color:theme.palette.primary.main,
-    backgroundColor:'#fff',
-    borderRadius:'20px',
-    border:'none',
-    fontSize:'12px',
-    fontWeight:'bold',
-    letterSpacing:'0.5px',
-    padding:'0px 20px',
-    margin:'0px 15px',
-    [theme.breakpoints.down('xs')]:{
-      maxWidth:'180px'
-    }
+  select: {
+    maxWidth: '250px',
+    color: theme.palette.primary.main,
+    backgroundColor: 'var(--white)',
+    borderRadius: '20px',
+    border: 'none',
+    fontSize: '12px',
+    fontWeight: 'bold',
+    letterSpacing: '0.5px',
+    padding: '0px 20px',
+    margin: '0px 15px',
+    [theme.breakpoints.down('xs')]: {
+      maxWidth: '180px',
+    },
   },
-  link:{
+  link: {
     padding: '10px 0px',
-    textDecoration:'none',
+    textDecoration: 'none',
     '&:hover': {
       backgroundColor: 'var(--deep-torquoise)',
     },
-  }
+  },
 }));
 
-
 export const Text = styled.div`
-color:#fff;
-text-decoration: none;
-&:hover{
-      background-color: 'var(--deep-torquoise)',
-    };
-margin:0px 15px;
-@media (max-width:600px){
- display:none
-}
-`
+  color: var(--white);
+  text-decoration: none;
+  &:hover {
+    background-color: 'var(--deep-torquoise)';
+  }
+  margin: 0px 15px;
+  @media (max-width: 600px) {
+    display: none;
+  }
+`;

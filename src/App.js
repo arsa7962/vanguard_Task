@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from '@material-ui/styles';
 
 import AppBar from './components/appbar/Appbar';
-import AppBar2 from './components/appbar2/Appbar2';
+import NavBar from './components/navbar/Navbar';
 import Alert from './components/welcomeAlert/Alert';
 import Main from './pages/accountSummary/AccountOverview';
 import SubFooter from './components/subFooter/SubFooter';
@@ -16,12 +16,18 @@ export default function App() {
   return (
     <BrowserRouter>
       <ThemeProvider theme={theme}>
-        <AppBar />
-        <AppBar2 />
-        <Alert/>
-        <Main />
-        <SubFooter />
-        <Footer />
+        <header>
+          <AppBar />
+          <NavBar />
+          <Alert />
+        </header>
+        <body>
+          <Main />
+        </body>
+        <footer>
+          <SubFooter />
+          <Footer />
+        </footer>
       </ThemeProvider>
     </BrowserRouter>
   );

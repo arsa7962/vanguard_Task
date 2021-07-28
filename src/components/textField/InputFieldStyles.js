@@ -4,7 +4,7 @@ export const useStyles = makeStyles((theme) => ({
   root: {
     height: '40px',
     width: '280px',
-    border: '1px solid #fff',
+    border: '1px solid var(--white)',
     backgroundColor: 'var(--deep-torquoise)',
     borderRadius: '0px',
   },
@@ -16,6 +16,6 @@ export const useStyles = makeStyles((theme) => ({
   },
   btn: {
     width: '40px',
-    color: '#fff',
+    color: 'var(--white)',
   },
 }));

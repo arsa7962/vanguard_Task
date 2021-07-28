@@ -119,7 +119,6 @@ export const tabPanelButtons = [
   'Contribution',
   'Grant',
   'Exchange',
-  'Manage your Account',
 ];
 export const buttons = ['Create another fund', 'Invite interested parties'];
 export const footer =

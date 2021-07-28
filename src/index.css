@@ -1,13 +1,13 @@
 :root {
   --navy: #022737;
-  --white: #eaeaea;
-  --white-two: #f5f5f5;
+  --white: #fff;
+  --white-two: #eaeaea;
+  --text-color: #505050;
   --deep-torquoise: #006778;
   --light-grey-blue: #b6bdbd;
   --helvetica: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
     Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
-
 body {
   margin: 0;
   font-family: var(--helvetica);
@@ -28,13 +28,33 @@ code {
 }
 
 .MuiTab-textColorInherit.Mui-selected {
-  z-index: 999;
-  opacity: 1;
   color: var(--deep-torquoise);
-  border: none;
-  border-top: 4px solid var(--deep-torquoise);
+  border-bottom: none !important;
+  border-left: none !important;
   background-color: #fff;
 }
-.PrivateTabIndicator-colorSecondary-28 {
-  background-color:var(--white) !important;
+.MuiIconButton-root {
+  margin: 0px 20px !important;
+  width: 27px !important;
+  height: 27px !important;
+  border: solid 0.6px #727272 !important;
+  color: #727272 !important;
+  background-color: transparent !important;
+}
+.MuiTabs-fixed {
+  overflow-x: auto !important;
+}
+.MuiBox-root {
+  padding: 20px 30px 17px !important;
+}
+.MuiTab-root {
+  min-width: auto !important;
+}
+@media only screen and (max-width: 991px) {
+  .MuiIconButton-root {
+    margin: 0px 10px !important;
+  }
+  .MuiBox-root {
+    padding: 20px 20px 17px !important;
+  }
 }

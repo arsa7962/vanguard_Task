@@ -11,16 +11,10 @@ export default function TabDataStyles({ data }) {
           {data.title}
         </Typography>
         <Typography variant='subtitle1'>{data.content}</Typography>
-        <Typography className={classes.mt}>
-          Username:
-          <Typography variant='span' className={classes.value}>
-            {data.Username}
-          </Typography>
-        </Typography>
         <Grid container spacing={2} className={classes.mt}>
           {data.userData.map((items) => {
             return (
-              <Grid item xs={4}>
+              <Grid item sm={4} xs={6}>
                 <Typography>{items.title}</Typography>
                 <Typography className={classes.value}>{items.value}</Typography>
               </Grid>
@@ -28,8 +22,8 @@ export default function TabDataStyles({ data }) {
           })}
         </Grid>
       </div>
-      <Divider/>
-      <Button color='#fff' align='left' content={data.btnContent} className={classes.btn}/>
+      <Divider className={classes.divider}/>
+      <Button color='white' align='left' content={data.btnContent} className={classes.btn}/>
     </>
   );
 }

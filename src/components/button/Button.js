@@ -1,12 +1,24 @@
 import PropTypes from 'prop-types';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import { Button } from './ButtonStyles';
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
-export default function Index({ width,align,color, content, ...rest }) {
+export default function Index({
+  width,
+  align,
+  color,
+  dropdown,
+  content,
+  ...rest
+}) {
   return (
     <Button width={width} align={align} color={color} {...rest}>
       {content}
-      <ArrowForwardIcon className='arrow' />
+      {dropdown ? (
+        <ArrowDropDownIcon className='dropdown' />
+      ) : (
+        <span className='arrow'>&rarr;</span>
+      )}
     </Button>
   );
 }
@@ -21,5 +33,6 @@ Index.defaultProps = {
   width: '100%',
   color: '#006778',
   content: '',
-  align:'center'
+  align: 'center',
+  dropdown: '',
 };

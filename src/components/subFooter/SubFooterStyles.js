@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   background-color: var(--navy);
-  color: #fff;
+  color: var(--white);
   padding: 30px 0px;
 `;
 export const InnerWrapper = styled.div`
@@ -36,7 +36,7 @@ export const IconWrapper = styled.div`
 `;
 export const Icon = styled.div`
   padding: 6px 5px 0px;
-  border: 1px solid #fff;
+  border: 1px solid var(--white);
   border-radius: 50%;
   margin: 0px 10px;
   opacity: 0.5;

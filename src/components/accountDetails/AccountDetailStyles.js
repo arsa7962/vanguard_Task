@@ -4,24 +4,19 @@ export const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  accountDetails:{
-    margin:'30px 0px',
-    backgroundColor: 'var(--white)',
-    padding:'50px 0px'
+  accountDetails: {
+    margin: '50px 0px',
+    backgroundColor: 'var(--white-two)',
+    padding: '50px 0px',
   },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
+  buttonWrapper: {
+    marginTop: '10px',
+    '&:nth-type(4) button': {
+      backgroundColor: 'var(--white)',
+      color: 'var(--deep-torquoise)',
+    },
   },
-  buttonWrapper:{
-    '&:nth-type(4) button' :{
-        backgroundColor:'#fff',
-        color:'var(--deep-torquoise)'
-    }
+  button: {
+    margin: '0px 10px',
   },
-  button:{
-      margin:'0px 10px',
-      
-  }
 }));

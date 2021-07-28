@@ -9,7 +9,7 @@ import { useStyles } from './AlertStyles';
 export default function Alert() {
   const classes = useStyles();
   return (
-    <AppBar className={classes.appbar} elevation={0}>
+    <AppBar component='div' className={classes.appbar} elevation={0}>
       <Container>
         <Typography>
           {welcomeText}

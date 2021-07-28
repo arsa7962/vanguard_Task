@@ -33,7 +33,7 @@ export default function AccountOverview() {
         </Typography>
         <Typography variant='h6'>Balances as of 12/12/2012</Typography>
       </Container>
-      <AccountDetails className={classes.accountDetails} />
+      <AccountDetails />
       <Container>
         <Grid container spacing={3} className={classes.btn}>
           <Grid item md={6} xs={12}>

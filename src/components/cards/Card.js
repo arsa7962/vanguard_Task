@@ -8,10 +8,9 @@ import { useStyles } from './CardStyles';
 
 export default function CardBlock(props) {
   const classes = useStyles();
-  const name = props.className + classes.root;
   return (
-    <Card className={name} elevation={0}>
-      <CardContent>
+    <Card className={classes.root} elevation={0}>
+      <CardContent className={classes.content}>
         <Typography className={classes.title}>
           {props.title}
           <InfoIcon className={classes.icon} />
@@ -22,7 +21,7 @@ export default function CardBlock(props) {
         <CardActions>
           <Button
             className={classes.btn}
-            color='#fff'
+            color='white'
             align='left'
             content={props.btnContent}
           />

@@ -10,7 +10,7 @@ export default function InputField(props) {
   return (
     <ButtonGroup className={classes.root}>
       <input className={classes.input} placeholder={props.placeholder}></input>
-      <Button className={classes.btn} endIcon={<ArrowForward />} ></Button>
+      <Button className={classes.btn}><ArrowForward /></Button>
     </ButtonGroup>
   );
 }

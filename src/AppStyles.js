@@ -20,7 +20,7 @@ export const theme = createTheme({
     secondary: { main: '#006778' },
   },
   text: {
-    primary: '#505050',
+    primary: 'var(--text-color)',
   },
   breakpoints: {
     values: {
@@ -29,10 +29,11 @@ export const theme = createTheme({
       lg: 1180,
     },
   },
+  spacing:10,
   overrides: {
     MuiTypography: {
       root: {
-        color: '#505050',
+        color: 'var(--text-color)',
       },
     },
     MuiToolbar: {
@@ -42,7 +43,7 @@ export const theme = createTheme({
     },
     MuiSelect: {
       icon: {
-        color: '#022737',
+        color: 'var(--navy)',
       },
     },
     MuiPopover: {
@@ -52,20 +53,26 @@ export const theme = createTheme({
         marginLeft: '-15px',
       },
     },
+    MuiPaper:{
+      rounded:{
+        borderRadius:'0px'
+      }
+    },
     MuiTypography: {
       h4: {
-        marginTop: '40px',
-        marginBottom: '10px',
+        paddingTop: '50px',
+        paddingBottom: '23px',
         fontFamily: 'BerkeleyStd',
         fontSize: ' 42px',
         fontWeight: 'bold',
         lineHeight: 1.14,
         letterSpacing: '0.5px',
-        color: '#022737',
+        color: 'var(--navy)',
       },
       h6: {
         fontFamily: 'BerkeleyStd',
-        fontSize: ' 1rem',
+        fontSize: ' 16px',
+        lineHeight:'1.5'
       },
     },
     MuiTab: {
@@ -73,11 +80,10 @@ export const theme = createTheme({
         minWidth: 'auto',
       },
     },
-    MuiCard: {
-      root: {
-        height: '172px',
-        marginBottom: '20px',
-      },
+    MuiCardActions:{
+      root:{
+        padding:'0px'
+      }
     },
   },
 });

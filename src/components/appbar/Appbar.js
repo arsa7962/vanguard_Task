@@ -32,7 +32,7 @@ export default function Appbar() {
     );
   };
   return (
-    <AppBar className={classes.appBar}>
+    <AppBar component='div' className={classes.appBar}>
       <Container>
         <Toolbar className={classes.toolbar}>
           <Link to='/' className={classes.link}>
